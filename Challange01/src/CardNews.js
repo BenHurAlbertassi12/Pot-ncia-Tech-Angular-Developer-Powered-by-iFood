@@ -30,7 +30,7 @@ class CardNews extends HTMLElement {
     cardRigt.setAttribute('class', 'card_rigth');
 
     const newImage = document.createElement('img');
-    newImage.src = this.getAttribute('photo') || 'assetsimageNull.png';
+    newImage.src = this.getAttribute('photo') || 'assets/imageNull.png';
     newImage.alt = 'The Office';
     cardRigt.appendChild(newImage);
 
