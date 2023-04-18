@@ -12,7 +12,7 @@ function CallToPhone(phone: number | string): number | string {
 }
 
 async function getDatabase(id: number): Promise<string> {
-  return "felipe";
+  return "BenHur";
 }
 
 let soma: number = addNumber(4, 7);
