@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
+import { ListaModule } from './lista/lista.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,7 @@ import { CompAtributosComponent } from './comp-atributos/comp-atributos.componen
     CardComponent,
     CompAtributosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ListaModule],
   providers: [],
   bootstrap: [AppComponent],
 })
