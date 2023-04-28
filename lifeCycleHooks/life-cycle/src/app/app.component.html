@@ -1,6 +1,10 @@
 <h1>MyApp</h1>
 <app-title nome="BenHur"></app-title>
 <app-chack-sample *ngIf="isAliveCheckSample"></app-chack-sample>
-<app-card></app-card>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+<p></p>
 <button (click)="disposeCheckSalmple()">Destruir</button>
+<ng-template #anotherBlock>
+    <p>Olá Sou um Bloco Secreto</p>
+</ng-template>
 <router-outlet></router-outlet>

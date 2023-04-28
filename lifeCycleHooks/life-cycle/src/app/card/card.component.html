@@ -1,1 +1,38 @@
-<p>card works!</p>
+<p>Praticando Diretivas estruturais</p>
+<ul>
+    <li 
+    *ngFor="let p of produtos; 
+    let i = index"
+    (click)="remover(i)"
+    > 
+       {{i}} - {{p}} 
+    </li>
+    <button (click)="adicionar()">Adicionar</button>
+    <button (click)="remove()">Remover Ultimo</button>
+</ul>
+<div [ngSwitch]="menuType">
+    <div *ngSwitchDefault="">
+    <ul>
+        <li> Editar Perfil </li>
+        <li> Adicionar Cartão </li>
+    </ul>
+    </div>
+
+    <div *ngSwitchCase="'admin'">
+    <ul>
+        <li> Editar Perfil </li>
+        <li> Adicionar Cartão </li>
+        <li> Gerenciar Usuarios </li>
+    </ul>
+    </div>
+
+    <div *ngSwitchCase="'superAdmin'">
+    <ul>
+        <li> Editar Perfil </li>
+        <li> Adicionar Cartão </li>
+        <li> Gerenciar Usuarios </li>
+        <li> Gerenciar Admin </li>
+    </ul>
+    </div>
+
+</div>
